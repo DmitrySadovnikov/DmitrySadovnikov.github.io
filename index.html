@@ -1,23 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
 
-<div class="home">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dmitry Sadovnikov</title>
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ruby_logo_64x64.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="css/style.css">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+<div class="home panel" data-section-name="i_am">
+    <div class="inner">
+        <div class="vertical-center">
+            <div class="flex-container">
+                <div style="flex: 2">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+                    <span class='block-title'>I am: </span>
+                    <span class='block-content'>Dmitry Sadovnikov</span>
+                    <br>
+                    <span class='block-content'>Ruby on Rails Web Developer</span>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
+
+<div class="panel" data-section-name="my_skills">
+    <div class="inner">
+        <div class="vertical-center">
+            <div class="flex-container">
+                <div>
+                    <span class='block-title'>My skills: </span>
+                    <span class='block-content'>Ruby on Rails, RSpec, Git, Unix, JavaScript, Slim, SCSS, PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="panel" data-section-name="i_do">
+    <div class="inner">
+        <div class="vertical-center">
+            <div class="flex-container">
+                <div>
+                    <span class='block-title'>I do: </span>
+                    <span class='block-content'>Solve complex problems</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="panel" data-section-name="contacts">
+    <div class="inner">
+        <div class="vertical-center">
+            <div class="flex-container">
+                <div>
+                    <a href="https://github.com/DmitrySadovnikov" class="fa fa-github" target="_blank"></a>
+                </div>
+
+                <div>
+                    <a href="https://www.linkedin.com/in/DmitrySadovnikov/" class="fa fa-linkedin" target="_blank"></a>
+                </div>
+
+                <div>
+                    <a href="https://fb.com/SadovnikovDmitry" class="fa fa-facebook" target="_blank"></a>
+                </div>
+
+                <div>
+                    <a href="https://vk.com/DmitrySadovnikov" class="fa fa-vk" target="_blank"></a>
+                </div>
+
+                <div>
+                    <a href="mailto:sadovnikov.js@gmail.com" class="fa fa-envelope"></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.4/jquery.scrollify.min.js"></script>
+<script type="text/javascript" src="javascript/javascript.js"></script>
+
+</body>
+</html>
